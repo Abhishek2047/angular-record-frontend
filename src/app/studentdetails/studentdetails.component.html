@@ -1,0 +1,26 @@
+<div class="row ">
+    <div class="col">
+  <table border="1" class=" table ml-2">
+    <thead class="bg-success">
+      <tr>
+        <th>s.no</th>
+        <th>First name</th>
+        <th>Last name</th>
+        <th>city</th>
+        <th><button class="btg bg-success" (click)="setOder()">setOder</button>
+          <button class="btg bg-success" (click)="addStu()">insert Student details</button></th>
+      </tr>
+    </thead>
+    <tbody class="bg-dark text-light">
+      <tr *ngFor="let stu of studentDetail" >
+        <td  >{{stu.id}}</td >
+        <td>{{stu.firstName}}</td>
+        <td>{{stu.lastName}}</td>
+        <td>{{stu.cityName}}</td>
+        <td><button class="btg bg-success" (click)="updateStud(stu)" >Update</button>
+        <button class="btg bg-success" (click)="deleteStud(stu)" >Delete</button></td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+  </div>

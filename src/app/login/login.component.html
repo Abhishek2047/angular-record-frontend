@@ -1,0 +1,11 @@
+<form #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)" >
+<!-- <form #login="ngForm" (ngSubmit)='onSubmit(login)'> -->
+    <label for="name">User Name</label>
+        <input type="text" id="name" name="user" ngModel><br>
+    
+    <label for="pass">password</label>
+        <input type="number" id="pass" name="passw" ngModel><br>
+    
+    <button type="submit">Submit</button>
+</form>
+{{users.user}} {{users.passw}}

@@ -1,0 +1,13 @@
+<div>
+    <form #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)" >
+        <label for="id" hidden>id</label>
+        <input type="text" id="id" name="id"  hidden ngModel><br>
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstName"  ngModel><br>
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastName"  ngModel><br>
+        <label for="cname">City Name</label>
+        <input type="text" id="cname" name="cityName"  ngModel><br>
+        <button type="submit">Submit</button>
+    </form>
+</div>
